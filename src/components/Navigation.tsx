@@ -20,7 +20,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <NavLink to="/" className="flex-shrink-0">
-            <img src={logo} alt="VM Tutoring" className="h-12 md:h-16" />
+            <img src={logo} alt="VM Tutoring" className="h-36 md:h-48" />
           </NavLink>
 
           {/* Desktop Navigation */}
