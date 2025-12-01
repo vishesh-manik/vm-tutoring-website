@@ -7,18 +7,18 @@ const Index = () => {
   const offerings = [
     {
       icon: <BookOpen className="h-8 w-8" />,
-      title: "Selective School Prep",
-      description: "Comprehensive preparation for Victorian selective school entrance exams with proven strategies and techniques.",
+      title: "Selective School Mastery",
+      description: "Targeted exam preparation with proven strategies, timed practice, and weekly mock tests.",
     },
     {
       icon: <Award className="h-8 w-8" />,
-      title: "Maths & English",
-      description: "Advanced curriculum support building strong foundations in mathematics and English literacy skills.",
+      title: "Ability Test Training",
+      description: "Focused development in mathematics, reading comprehension, verbal ability and quantitative ability.",
     },
     {
       icon: <TrendingUp className="h-8 w-8" />,
-      title: "Reasoning Skills",
-      description: "Critical thinking and problem-solving development through targeted reasoning practice and exercises.",
+      title: "Writing Excellence Program",
+      description: "High-impact lessons building top-tier persuasive and creative writing for selective exams.",
     },
   ];
 
