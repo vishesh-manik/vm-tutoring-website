@@ -2,6 +2,7 @@ import { NavLink } from "@/components/NavLink";
 import { BookOpen, Users, TrendingUp, Award, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import tutorPhoto from "@/assets/tutor-photo.jpg";
 
 const Index = () => {
   const offerings = [
@@ -55,7 +56,7 @@ const Index = () => {
               <span className="block text-primary mt-2">That Gets Results</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Expert preparation for Victorian selective school exams. Personalised teaching, small groups, and proven strategies to help your child succeed.
+              Expert preparation for Victorian Selective School Exams. Personalised teaching, small groups, and proven strategies to help your child succeed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button asChild size="lg" className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all">
@@ -78,7 +79,7 @@ const Index = () => {
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold">What We Offer</h2>
             <p className="text-lg text-muted-foreground">
-              Comprehensive tutoring programs designed to prepare students for selective school success
+              Comprehensive tutoring programs designed to prepare students for Selective School success
             </p>
           </div>
 
@@ -101,60 +102,73 @@ const Index = () => {
       {/* Meet Your Tutor */}
       <section className="py-20 md:py-28 bg-gradient-to-br from-primary/5 to-secondary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12 space-y-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16 space-y-4">
               <h2 className="text-3xl md:text-5xl font-bold">Meet Your Tutor</h2>
             </div>
             
-            <div className="relative">
-              {/* Stats Bubbles */}
-              <div className="absolute -left-4 top-1/4 hidden lg:block animate-fade-in" style={{ animationDelay: "0ms" }}>
-                <div className="bg-white rounded-full p-6 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
-                  <div className="text-center">
-                    <p className="text-2xl font-bold text-primary">3+</p>
-                    <p className="text-sm text-muted-foreground">Years Experience</p>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Image Side with Stats */}
+              <div className="relative flex justify-center">
+                <div className="relative inline-block">
+                  <img 
+                    src={tutorPhoto} 
+                    alt="VM Tutoring - Selective School Tutor"
+                    className="w-80 h-80 object-cover object-top rounded-2xl shadow-2xl"
+                  />
+                  
+                  {/* Stats Bubbles around image */}
+                  <div className="absolute -left-16 top-12 animate-fade-in" style={{ animationDelay: "0ms" }}>
+                    <div className="bg-white rounded-full p-5 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
+                      <div className="text-center">
+                        <p className="text-xl font-bold text-primary">3+</p>
+                        <p className="text-xs text-muted-foreground whitespace-nowrap">Years Experience</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              
-              <div className="absolute -right-4 top-1/3 hidden lg:block animate-fade-in" style={{ animationDelay: "150ms" }}>
-                <div className="bg-white rounded-full p-6 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
-                  <div className="text-center">
-                    <p className="text-2xl font-bold text-primary">50+</p>
-                    <p className="text-sm text-muted-foreground">Students Tutored</p>
+                  
+                  <div className="absolute -right-16 top-24 animate-fade-in" style={{ animationDelay: "150ms" }}>
+                    <div className="bg-white rounded-full p-5 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
+                      <div className="text-center">
+                        <p className="text-xl font-bold text-primary">50+</p>
+                        <p className="text-xs text-muted-foreground whitespace-nowrap">Students Tutored</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              
-              <div className="absolute -left-8 bottom-1/4 hidden lg:block animate-fade-in" style={{ animationDelay: "300ms" }}>
-                <div className="bg-white rounded-full p-6 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
-                  <div className="text-center">
-                    <p className="text-2xl font-bold text-primary">2K+</p>
-                    <p className="text-sm text-muted-foreground">YouTube Subscribers</p>
+                  
+                  <div className="absolute -left-16 bottom-16 animate-fade-in" style={{ animationDelay: "300ms" }}>
+                    <div className="bg-white rounded-full p-5 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
+                      <div className="text-center">
+                        <p className="text-xl font-bold text-primary">2K+</p>
+                        <p className="text-xs text-muted-foreground whitespace-nowrap">YouTube Subscribers</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Main Content */}
-              <Card className="p-8 md:p-12 mx-auto max-w-3xl shadow-xl">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  With over three years of dedicated experience in selective school preparation, I've helped 50+ students achieve their academic goals. My teaching approach combines proven exam strategies with personalized attention, ensuring each student reaches their full potential. Through my YouTube channel with 2,000+ subscribers, I share free resources and tips to support students on their selective school journey.
-                </p>
-              </Card>
-              
-              {/* Mobile Stats - shown below on mobile */}
-              <div className="grid grid-cols-3 gap-4 mt-8 lg:hidden">
-                <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
-                  <p className="text-xl font-bold text-primary">3+</p>
-                  <p className="text-xs text-muted-foreground">Years Experience</p>
-                </div>
-                <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
-                  <p className="text-xl font-bold text-primary">50+</p>
-                  <p className="text-xs text-muted-foreground">Students Tutored</p>
-                </div>
-                <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
-                  <p className="text-xl font-bold text-primary">2K+</p>
-                  <p className="text-xs text-muted-foreground">YouTube Subscribers</p>
+              {/* Description Side */}
+              <div className="space-y-6">
+                <Card className="p-8 shadow-xl">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    With over three years of dedicated experience in Selective School preparation, I've helped 50+ students achieve their academic goals. My teaching approach combines proven exam strategies with personalized attention, ensuring each student reaches their full potential. Through my YouTube channel with 2,000+ subscribers, I share free resources and tips to support students on their Selective School journey.
+                  </p>
+                </Card>
+                
+                {/* Mobile Stats - shown below on mobile */}
+                <div className="grid grid-cols-3 gap-4 lg:hidden">
+                  <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
+                    <p className="text-xl font-bold text-primary">3+</p>
+                    <p className="text-xs text-muted-foreground">Years Experience</p>
+                  </div>
+                  <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
+                    <p className="text-xl font-bold text-primary">50+</p>
+                    <p className="text-xs text-muted-foreground">Students Tutored</p>
+                  </div>
+                  <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
+                    <p className="text-xl font-bold text-primary">2K+</p>
+                    <p className="text-xs text-muted-foreground">YouTube Subscribers</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -169,7 +183,7 @@ const Index = () => {
             <div className="text-center mb-16 space-y-4">
               <h2 className="text-3xl md:text-5xl font-bold">Why Choose VM Tutoring</h2>
               <p className="text-lg text-muted-foreground">
-                Proven methods and personalised attention for selective school success
+                Proven methods and personalised attention for Selective School success
               </p>
             </div>
 
@@ -194,7 +208,7 @@ const Index = () => {
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold">Success Stories</h2>
             <p className="text-lg text-muted-foreground">
-              Hear from parents and students who achieved their selective school goals
+              Hear from parents and students who achieved their Selective School goals
             </p>
           </div>
 
@@ -227,7 +241,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h2 className="text-3xl md:text-5xl font-bold">Ready to Get Started?</h2>
             <p className="text-lg md:text-xl text-white/90">
-              Book a free consultation to discuss your child's selective school preparation journey
+              Book a free consultation to discuss your child's Selective School preparation journey
             </p>
             <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6 rounded-full shadow-xl">
               <NavLink to="/contact">Book Your Free Consultation</NavLink>
