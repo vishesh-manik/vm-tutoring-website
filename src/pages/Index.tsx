@@ -23,12 +23,12 @@ const Index = () => {
   ];
 
   const whyChoose = [
-    "Small group classes (max 6 students)",
-    "Weekly progress feedback to parents",
-    "Proven exam strategies and techniques",
-    "Personalised learning plans",
+    "Small group classes",
+    "Accessible online lessons",
     "Experienced selective school specialist",
-    "Free trial lesson available",
+    "Free 1:1 consultations",
+    "Weekly practice tests",
+    "Extensive writing support",
   ];
 
   const testimonials = [
