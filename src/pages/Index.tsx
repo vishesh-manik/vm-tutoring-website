@@ -23,12 +23,12 @@ const Index = () => {
   ];
 
   const whyChoose = [
-    "Small group classes",
-    "Convenient online lessons",
-    "Expert selective school tutor",
-    "Free 1:1 consultations",
-    "Weekly practice tests",
-    "Comprehensive writing support",
+    "Small Group Classes",
+    "Convenient Online Lessons",
+    "Expert Selective School Tutor",
+    "Free 1:1 Consultations",
+    "Weekly Practice Tests",
+    "Comprehensive Writing Support",
   ];
 
   const testimonials = [
