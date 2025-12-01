@@ -98,6 +98,70 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Meet Your Tutor */}
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary/5 to-secondary/20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12 space-y-4">
+              <h2 className="text-3xl md:text-5xl font-bold">Meet Your Tutor</h2>
+            </div>
+            
+            <div className="relative">
+              {/* Stats Bubbles */}
+              <div className="absolute -left-4 top-1/4 hidden lg:block animate-fade-in" style={{ animationDelay: "0ms" }}>
+                <div className="bg-white rounded-full p-6 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
+                  <div className="text-center">
+                    <p className="text-2xl font-bold text-primary">3+</p>
+                    <p className="text-sm text-muted-foreground">Years Experience</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="absolute -right-4 top-1/3 hidden lg:block animate-fade-in" style={{ animationDelay: "150ms" }}>
+                <div className="bg-white rounded-full p-6 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
+                  <div className="text-center">
+                    <p className="text-2xl font-bold text-primary">50+</p>
+                    <p className="text-sm text-muted-foreground">Students Tutored</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="absolute -left-8 bottom-1/4 hidden lg:block animate-fade-in" style={{ animationDelay: "300ms" }}>
+                <div className="bg-white rounded-full p-6 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
+                  <div className="text-center">
+                    <p className="text-2xl font-bold text-primary">2K+</p>
+                    <p className="text-sm text-muted-foreground">YouTube Subscribers</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main Content */}
+              <Card className="p-8 md:p-12 mx-auto max-w-3xl shadow-xl">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  With over three years of dedicated experience in selective school preparation, I've helped 50+ students achieve their academic goals. My teaching approach combines proven exam strategies with personalized attention, ensuring each student reaches their full potential. Through my YouTube channel with 2,000+ subscribers, I share free resources and tips to support students on their selective school journey.
+                </p>
+              </Card>
+              
+              {/* Mobile Stats - shown below on mobile */}
+              <div className="grid grid-cols-3 gap-4 mt-8 lg:hidden">
+                <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
+                  <p className="text-xl font-bold text-primary">3+</p>
+                  <p className="text-xs text-muted-foreground">Years Experience</p>
+                </div>
+                <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
+                  <p className="text-xl font-bold text-primary">50+</p>
+                  <p className="text-xs text-muted-foreground">Students Tutored</p>
+                </div>
+                <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
+                  <p className="text-xl font-bold text-primary">2K+</p>
+                  <p className="text-xs text-muted-foreground">YouTube Subscribers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-20 md:py-28 bg-muted/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
