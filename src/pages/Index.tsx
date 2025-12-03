@@ -126,47 +126,50 @@ const Index = () => {
       </section>
 
       {/* Meet Your Tutor */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-primary/5 to-secondary/20">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
+          <div className="w-full">
             <div className="text-center mb-16 space-y-4">
               <h2 className="text-3xl md:text-5xl font-bold">Meet Your Tutor</h2>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
               {/* Image Side with Stats */}
-              <div className="relative flex justify-center">
+              <div className="relative flex justify-center lg:justify-end">
                 <div className="relative inline-block">
-                  <img 
-                    src={tutorPhoto} 
-                    alt="VM Tutoring - Selective School Tutor"
-                    className="w-80 h-80 object-cover object-top rounded-2xl shadow-2xl"
-                  />
+                  <div className="text-center">
+                    <img 
+                      src={tutorPhoto} 
+                      alt="Vishesh Manik - Selective School Tutor"
+                      className="w-80 h-80 object-cover object-top rounded-2xl shadow-2xl"
+                    />
+                    <p className="mt-4 text-xl font-semibold text-primary-foreground">Vishesh Manik</p>
+                  </div>
                   
                   {/* Stats Bubbles around image */}
-                  <div className="absolute -left-16 top-12 animate-fade-in" style={{ animationDelay: "0ms" }}>
-                    <div className="bg-primary/10 rounded-full p-5 shadow-lg border-2 border-primary/30 hover:shadow-xl transition-shadow">
+                  <div className="absolute -left-16 top-12 animate-fade-in hidden lg:block" style={{ animationDelay: "0ms" }}>
+                    <div className="bg-background rounded-full p-5 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
                       <div className="text-center">
                         <p className="text-xl font-bold text-primary">3+</p>
-                        <p className="text-xs text-foreground/70 whitespace-nowrap">Years Experience</p>
+                        <p className="text-xs text-muted-foreground whitespace-nowrap">Years Experience</p>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="absolute -right-16 top-24 animate-fade-in" style={{ animationDelay: "150ms" }}>
-                    <div className="bg-primary/10 rounded-full p-5 shadow-lg border-2 border-primary/30 hover:shadow-xl transition-shadow">
+                  <div className="absolute -right-16 top-24 animate-fade-in hidden lg:block" style={{ animationDelay: "150ms" }}>
+                    <div className="bg-background rounded-full p-5 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
                       <div className="text-center">
                         <p className="text-xl font-bold text-primary">50+</p>
-                        <p className="text-xs text-foreground/70 whitespace-nowrap">Students Tutored</p>
+                        <p className="text-xs text-muted-foreground whitespace-nowrap">Students Tutored</p>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="absolute -left-16 bottom-16 animate-fade-in" style={{ animationDelay: "300ms" }}>
-                    <div className="bg-primary/10 rounded-full p-5 shadow-lg border-2 border-primary/30 hover:shadow-xl transition-shadow">
+                  <div className="absolute -left-16 bottom-24 animate-fade-in hidden lg:block" style={{ animationDelay: "300ms" }}>
+                    <div className="bg-background rounded-full p-5 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
                       <div className="text-center">
                         <p className="text-xl font-bold text-primary">2K+</p>
-                        <p className="text-xs text-foreground/70 whitespace-nowrap">YouTube Subscribers</p>
+                        <p className="text-xs text-muted-foreground whitespace-nowrap">YouTube Subscribers</p>
                       </div>
                     </div>
                   </div>
@@ -174,26 +177,26 @@ const Index = () => {
               </div>
 
               {/* Description Side */}
-              <div className="space-y-6">
-                <Card className="p-8 shadow-xl">
+              <div className="space-y-6 lg:justify-self-start">
+                <Card className="p-8 shadow-xl bg-background/95 backdrop-blur">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    With over three years of dedicated experience in Selective School preparation, I've helped 50+ students achieve their academic goals. My teaching approach combines proven exam strategies with personalized attention, ensuring each student reaches their full potential. Through my YouTube channel with 2,000+ subscribers, I share free resources and tips to support students on their Selective School journey.
+                    Hi, I'm <span className="font-semibold text-foreground">Vishesh Manik</span>! With over three years of dedicated experience in Selective School preparation, I've helped 50+ students achieve their academic dreams. My teaching approach combines proven exam strategies with personalised attention, ensuring each student reaches their full potential. Through my YouTube channel with 2,000+ subscribers, I share free resources and tips to support students on their Selective School journey. I'm passionate about helping students succeed and can't wait to work with you!
                   </p>
                 </Card>
                 
                 {/* Mobile Stats - shown below on mobile */}
                 <div className="grid grid-cols-3 gap-4 lg:hidden">
-                  <div className="bg-primary/10 rounded-2xl p-4 shadow-md border border-primary/20 text-center">
+                  <div className="bg-background rounded-2xl p-4 shadow-md border border-primary/20 text-center">
                     <p className="text-xl font-bold text-primary">3+</p>
-                    <p className="text-xs text-foreground/70">Years Experience</p>
+                    <p className="text-xs text-muted-foreground">Years Experience</p>
                   </div>
-                  <div className="bg-primary/10 rounded-2xl p-4 shadow-md border border-primary/20 text-center">
+                  <div className="bg-background rounded-2xl p-4 shadow-md border border-primary/20 text-center">
                     <p className="text-xl font-bold text-primary">50+</p>
-                    <p className="text-xs text-foreground/70">Students Tutored</p>
+                    <p className="text-xs text-muted-foreground">Students Tutored</p>
                   </div>
-                  <div className="bg-primary/10 rounded-2xl p-4 shadow-md border border-primary/20 text-center">
+                  <div className="bg-background rounded-2xl p-4 shadow-md border border-primary/20 text-center">
                     <p className="text-xl font-bold text-primary">2K+</p>
-                    <p className="text-xs text-foreground/70">YouTube Subscribers</p>
+                    <p className="text-xs text-muted-foreground">YouTube Subscribers</p>
                   </div>
                 </div>
               </div>
