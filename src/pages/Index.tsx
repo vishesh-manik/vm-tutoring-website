@@ -99,6 +99,32 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Why Choose Us */}
+      <section className="py-20 md:py-28 bg-muted/50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16 space-y-4">
+              <h2 className="text-3xl md:text-5xl font-bold">Why Choose VM Tutoring</h2>
+              <p className="text-lg text-muted-foreground">
+                Proven methods and personalised attention for Selective School success
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {whyChoose.map((reason, index) => (
+                <div
+                  key={index}
+                  className="flex items-start gap-3 p-6 bg-background rounded-xl shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-lg">{reason}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Meet Your Tutor */}
       <section className="py-20 md:py-28 bg-gradient-to-br from-primary/5 to-secondary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -119,28 +145,28 @@ const Index = () => {
                   
                   {/* Stats Bubbles around image */}
                   <div className="absolute -left-16 top-12 animate-fade-in" style={{ animationDelay: "0ms" }}>
-                    <div className="bg-white rounded-full p-5 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
+                    <div className="bg-primary/10 rounded-full p-5 shadow-lg border-2 border-primary/30 hover:shadow-xl transition-shadow">
                       <div className="text-center">
                         <p className="text-xl font-bold text-primary">3+</p>
-                        <p className="text-xs text-muted-foreground whitespace-nowrap">Years Experience</p>
+                        <p className="text-xs text-foreground/70 whitespace-nowrap">Years Experience</p>
                       </div>
                     </div>
                   </div>
                   
                   <div className="absolute -right-16 top-24 animate-fade-in" style={{ animationDelay: "150ms" }}>
-                    <div className="bg-white rounded-full p-5 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
+                    <div className="bg-primary/10 rounded-full p-5 shadow-lg border-2 border-primary/30 hover:shadow-xl transition-shadow">
                       <div className="text-center">
                         <p className="text-xl font-bold text-primary">50+</p>
-                        <p className="text-xs text-muted-foreground whitespace-nowrap">Students Tutored</p>
+                        <p className="text-xs text-foreground/70 whitespace-nowrap">Students Tutored</p>
                       </div>
                     </div>
                   </div>
                   
                   <div className="absolute -left-16 bottom-16 animate-fade-in" style={{ animationDelay: "300ms" }}>
-                    <div className="bg-white rounded-full p-5 shadow-lg border-2 border-primary/20 hover:shadow-xl transition-shadow">
+                    <div className="bg-primary/10 rounded-full p-5 shadow-lg border-2 border-primary/30 hover:shadow-xl transition-shadow">
                       <div className="text-center">
                         <p className="text-xl font-bold text-primary">2K+</p>
-                        <p className="text-xs text-muted-foreground whitespace-nowrap">YouTube Subscribers</p>
+                        <p className="text-xs text-foreground/70 whitespace-nowrap">YouTube Subscribers</p>
                       </div>
                     </div>
                   </div>
@@ -157,46 +183,20 @@ const Index = () => {
                 
                 {/* Mobile Stats - shown below on mobile */}
                 <div className="grid grid-cols-3 gap-4 lg:hidden">
-                  <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
+                  <div className="bg-primary/10 rounded-2xl p-4 shadow-md border border-primary/20 text-center">
                     <p className="text-xl font-bold text-primary">3+</p>
-                    <p className="text-xs text-muted-foreground">Years Experience</p>
+                    <p className="text-xs text-foreground/70">Years Experience</p>
                   </div>
-                  <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
+                  <div className="bg-primary/10 rounded-2xl p-4 shadow-md border border-primary/20 text-center">
                     <p className="text-xl font-bold text-primary">50+</p>
-                    <p className="text-xs text-muted-foreground">Students Tutored</p>
+                    <p className="text-xs text-foreground/70">Students Tutored</p>
                   </div>
-                  <div className="bg-white rounded-2xl p-4 shadow-md border border-primary/10 text-center">
+                  <div className="bg-primary/10 rounded-2xl p-4 shadow-md border border-primary/20 text-center">
                     <p className="text-xl font-bold text-primary">2K+</p>
-                    <p className="text-xs text-muted-foreground">YouTube Subscribers</p>
+                    <p className="text-xs text-foreground/70">YouTube Subscribers</p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-20 md:py-28 bg-muted/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16 space-y-4">
-              <h2 className="text-3xl md:text-5xl font-bold">Why Choose VM Tutoring</h2>
-              <p className="text-lg text-muted-foreground">
-                Proven methods and personalised attention for Selective School success
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {whyChoose.map((reason, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-3 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-lg">{reason}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>
