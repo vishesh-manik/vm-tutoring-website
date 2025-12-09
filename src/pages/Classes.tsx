@@ -6,33 +6,35 @@ import { NavLink } from "@/components/NavLink";
 const Classes = () => {
   const programs = [
     {
-      name: "Selective School Program",
-      description: "Complete preparation for Victorian Selective School exams",
-      features: [
-        "3.5-hour weekly online sessions",
-        "Maximum 6 students per class",
-        "All exam components covered",
-        "Full-length practice exams",
-        "Comprehensive study materials",
-        "Weekly progress reports",
-        "Exam technique workshops",
-      ],
-    },
-    {
-      name: "Edutest Scholarship Program",
+      name: "Scholarship Exam Preparation",
       description: "Targeted preparation for Edutest scholarship examinations",
       features: [
-        "3.5-hour weekly online sessions",
-        "Maximum 6 students per class",
+        "2-hour weekly online sessions",
+        "Small group lessons",
         "Edutest-specific strategies",
         "Practice tests under exam conditions",
         "Comprehensive study materials",
         "Weekly progress reports",
         "Parent information sessions",
       ],
+      popular: false,
     },
     {
-      name: "1:1 Tutoring",
+      name: "Selective School Program",
+      description: "Complete preparation for Victorian Selective School exams",
+      features: [
+        "3.5-hour weekly online sessions",
+        "Small group lessons",
+        "All exam components covered",
+        "Full-length practice exams",
+        "Comprehensive study materials",
+        "Weekly progress reports",
+        "Exam technique workshops",
+      ],
+      popular: true,
+    },
+    {
+      name: "1:1 Personalised Tutoring",
       description: "Specialised help tailored to your child's needs in maths and English",
       features: [
         "Personalised learning plan",
@@ -43,7 +45,7 @@ const Classes = () => {
         "Detailed progress tracking",
         "Customised study materials",
       ],
-      popular: true,
+      popular: false,
     },
   ];
 
