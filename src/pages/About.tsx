@@ -1,12 +1,13 @@
 import { Award, Target, Heart, BookOpen } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import tutorPhoto from "@/assets/tutor-photo.jpg";
 
 const About = () => {
   const values = [
     {
       icon: <Award className="h-8 w-8" />,
       title: "Excellence",
-      description: "We maintain the highest standards in selective school exam preparation.",
+      description: "We maintain the highest standards in ACER-based Selective School exam preparation.",
     },
     {
       icon: <Target className="h-8 w-8" />,
@@ -28,7 +29,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold">About VM Tutoring</h1>
             <p className="text-xl text-muted-foreground">
-              Empowering Victorian students to achieve their selective school dreams through expert guidance and personalised teaching
+              Empowering Victorian students to achieve their Selective School dreams through expert ACER-based guidance and personalised teaching
             </p>
           </div>
         </div>
@@ -45,15 +46,15 @@ const About = () => {
             
             <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                VM Tutoring was founded with a simple yet powerful mission: to help Victorian students unlock their full potential and gain entry to their dream selective schools. With years of experience in education and a deep understanding of the selective school entrance process, we've developed a proven approach that combines academic excellence with personalised support.
+                VM Tutoring was founded with a simple yet powerful mission: to help Victorian students unlock their full potential and gain entry to their dream Selective Schools. With years of experience in education and a deep understanding of the ACER-based Selective School entrance process, we've developed a proven approach that combines academic excellence with personalised support.
               </p>
               
               <p className="text-lg leading-relaxed">
-                Our tutoring methodology is built on three core pillars: comprehensive subject mastery, strategic exam techniques, and confidence building. We believe that success in selective school exams comes not just from knowing the content, but from understanding how to apply knowledge effectively under exam conditions.
+                Our tutoring methodology is built on three core pillars: comprehensive subject mastery, strategic ACER exam techniques, and confidence building. We believe that success in Selective School exams comes not just from knowing the content, but from understanding how to apply knowledge effectively under exam conditions.
               </p>
               
               <p className="text-lg leading-relaxed">
-                Over the years, we've helped hundreds of students achieve their selective school goals, with many gaining entry to prestigious schools including Melbourne High, Mac.Robertson Girls' High School, and Nossal High School. Our track record speaks to our commitment to excellence and our students' dedication to their academic journeys.
+                Over the years, we've helped hundreds of students achieve their Selective School goals, with many gaining entry to prestigious schools including Melbourne High, Mac.Robertson Girls' High School, and Nossal High School. Our track record speaks to our commitment to excellence and our students' dedication to their academic journeys.
               </p>
             </div>
           </div>
@@ -78,7 +79,7 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg leading-relaxed">
-                  <strong className="text-foreground">Structured Preparation:</strong> Our curriculum follows a carefully structured program that covers all aspects of the selective school exam—mathematics, reading comprehension, numerical reasoning, and verbal reasoning. We systematically build skills from foundational concepts to advanced problem-solving.
+                  <strong className="text-foreground">Structured ACER Preparation:</strong> Our curriculum follows a carefully structured program that covers all aspects of the ACER Selective School exam—mathematics, reading comprehension, numerical reasoning, and verbal reasoning. We systematically build skills from foundational concepts to advanced problem-solving.
                 </p>
                 
                 <p className="text-lg leading-relaxed">
@@ -86,7 +87,7 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg leading-relaxed">
-                  <strong className="text-foreground">Exam Strategy:</strong> Beyond content knowledge, we teach proven strategies for time management, question analysis, and stress reduction. Students learn how to approach different question types efficiently and confidently.
+                  <strong className="text-foreground">Exam Strategy:</strong> Beyond content knowledge, we teach proven strategies for time management, question analysis, and stress reduction. Students learn how to approach different ACER question types efficiently and confidently.
                 </p>
               </div>
             </Card>
@@ -118,36 +119,36 @@ const About = () => {
         </div>
       </section>
 
-      {/* Meet the Tutor */}
-      <section className="py-20 md:py-28 bg-muted/50">
+      {/* Meet Your Tutor */}
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12 space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold">Meet Your Tutor</h2>
+          <div className="w-full">
+            <div className="text-center mb-16 space-y-4">
+              <h2 className="text-3xl md:text-5xl font-bold">Meet Your Tutor</h2>
             </div>
-
-            <Card className="p-8 md:p-12 bg-white">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-2xl font-bold mb-2">Experienced Education Specialist</h3>
-                  <p className="text-primary font-medium">Selective School Exam Expert</p>
-                </div>
-                
-                <div className="space-y-4 text-muted-foreground">
-                  <p className="leading-relaxed">
-                    With extensive experience in preparing students for Victorian selective school entrance exams, I bring a deep understanding of both the academic content and the exam psychology that leads to success.
-                  </p>
-                  
-                  <p className="leading-relaxed">
-                    My approach combines rigorous academic preparation with emotional support, helping students develop not just the knowledge but also the confidence and resilience needed for competitive entrance exams.
-                  </p>
-                  
-                  <p className="leading-relaxed">
-                    I hold advanced qualifications in education and regularly update my teaching methods to reflect the latest exam trends and educational research. Most importantly, I'm passionate about seeing students achieve their dreams and reach their full potential.
-                  </p>
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+              {/* Image Side */}
+              <div className="flex justify-center">
+                <div className="text-center">
+                  <img 
+                    src={tutorPhoto} 
+                    alt="Vishesh Manik - Selective School Tutor"
+                    className="w-80 h-80 object-cover object-top rounded-2xl shadow-2xl"
+                  />
+                  <p className="mt-4 text-2xl font-bold text-primary-foreground">Vishesh Manik</p>
                 </div>
               </div>
-            </Card>
+
+              {/* Description Side */}
+              <div className="flex justify-center">
+                <Card className="p-8 shadow-xl bg-background/95 backdrop-blur max-w-md">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    <span className="font-semibold text-foreground">Vishesh Manik</span> brings over three years of dedicated experience in Selective School preparation, having helped 50+ students achieve their academic dreams. His teaching approach combines proven ACER exam strategies with personalised attention, ensuring each student reaches their full potential. Through his YouTube channel with 2,000+ subscribers, he shares free resources and tips to support students on their Selective School journey.
+                  </p>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>

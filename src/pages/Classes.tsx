@@ -21,11 +21,11 @@ const Classes = () => {
     },
     {
       name: "Selective School Program",
-      description: "Complete preparation for Victorian Selective School exams",
+      description: "Complete ACER-based preparation for Victorian Selective School exams",
       features: [
         "3.5-hour weekly online sessions",
         "Small group lessons",
-        "All exam components covered",
+        "ACER exam format and strategies",
         "Full-length practice exams",
         "Comprehensive study materials",
         "Weekly progress reports",

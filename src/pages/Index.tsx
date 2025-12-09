@@ -9,7 +9,7 @@ const Index = () => {
     {
       icon: <BookOpen className="h-8 w-8" />,
       title: "Selective School Mastery",
-      description: "Targeted exam preparation with proven strategies, timed practice, and weekly mock tests.",
+      description: "ACER-based exam preparation with proven strategies, timed practice, and weekly mock tests.",
     },
     {
       icon: <Award className="h-8 w-8" />,
@@ -56,7 +56,7 @@ const Index = () => {
               <span className="block text-primary mt-2">That Gets Results</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Expert preparation for Victorian Selective School Exams. Personalised teaching, small groups, and proven strategies to help your child succeed.
+              Expert ACER-based preparation for Victorian Selective School Exams. Personalised teaching, small groups, and proven strategies to help your child succeed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button asChild size="lg" className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all">
