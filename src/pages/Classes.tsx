@@ -6,30 +6,42 @@ import { NavLink } from "@/components/NavLink";
 const Classes = () => {
   const programs = [
     {
-      name: "Group Classes",
-      description: "Small group learning with maximum 6 students",
+      name: "Selective School Program",
+      description: "Complete preparation for Victorian Selective School exams",
       features: [
         "3.5-hour weekly online sessions",
         "Maximum 6 students per class",
-        "Comprehensive exam preparation",
-        "All study materials included",
+        "All exam components covered",
+        "Full-length practice exams",
+        "Comprehensive study materials",
         "Weekly progress reports",
-        "Homework assignments",
-        "Practice tests provided",
+        "Exam technique workshops",
       ],
     },
     {
-      name: "Selective School Prep",
-      description: "Complete Selective School exam preparation program",
+      name: "Edutest Scholarship Program",
+      description: "Targeted preparation for Edutest scholarship examinations",
       features: [
-        "12-week structured program",
-        "All exam components covered",
         "3.5-hour weekly online sessions",
-        "Full-length practice exams",
-        "Exam technique workshops",
-        "Parent information sessions",
+        "Maximum 6 students per class",
+        "Edutest-specific strategies",
+        "Practice tests under exam conditions",
         "Comprehensive study materials",
-        "Free trial lesson included",
+        "Weekly progress reports",
+        "Parent information sessions",
+      ],
+    },
+    {
+      name: "1:1 Tutoring",
+      description: "Specialised help tailored to your child's needs in maths and English",
+      features: [
+        "Personalised learning plan",
+        "Flexible scheduling",
+        "Targeted skill development",
+        "Focus on maths and English",
+        "Direct parent communication",
+        "Detailed progress tracking",
+        "Customised study materials",
       ],
       popular: true,
     },
@@ -41,9 +53,9 @@ const Classes = () => {
       <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/30 py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold">Our Classes</h1>
+            <h1 className="text-4xl md:text-6xl font-bold">Our Programs</h1>
             <p className="text-xl text-muted-foreground">
-              3.5-hour weekly online classes designed to fit your child's needs and schedule
+              Comprehensive tutoring programs designed to help your child succeed
             </p>
           </div>
         </div>
@@ -52,12 +64,12 @@ const Classes = () => {
       {/* Program Cards */}
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {programs.map((program, index) => (
               <Card
                 key={index}
                 className={`p-8 relative hover:shadow-2xl transition-all duration-300 ${
-                  program.popular ? "border-2 border-primary shadow-xl" : "border-2 border-transparent"
+                  program.popular ? "border-2 border-primary shadow-xl scale-105" : "border-2 border-transparent"
                 }`}
               >
                 {program.popular && (
@@ -122,7 +134,7 @@ const Classes = () => {
               <Card className="p-6 bg-white">
                 <h3 className="font-bold text-lg mb-3">Practice Exams</h3>
                 <p className="text-muted-foreground">
-                  Regular practice tests under exam conditions help students build familiarity and confidence with the Selective School exam format.
+                  Regular practice tests under exam conditions help students build familiarity and confidence with exam formats.
                 </p>
               </Card>
 
