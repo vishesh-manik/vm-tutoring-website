@@ -4,14 +4,12 @@ import { Card } from "@/components/ui/card";
 import { NavLink } from "@/components/NavLink";
 
 const Classes = () => {
-  const pricingTiers = [
+  const programs = [
     {
       name: "Group Classes",
-      price: "$65",
-      period: "per session",
       description: "Small group learning with maximum 6 students",
       features: [
-        "2-hour weekly sessions",
+        "3.5-hour weekly online sessions",
         "Maximum 6 students per class",
         "Comprehensive exam preparation",
         "All study materials included",
@@ -19,40 +17,21 @@ const Classes = () => {
         "Homework assignments",
         "Practice tests provided",
       ],
-      popular: false,
-    },
-    {
-      name: "1-on-1 Tutoring",
-      price: "$95",
-      period: "per hour",
-      description: "Personalised attention focused on your child's needs",
-      features: [
-        "Fully personalised lessons",
-        "Flexible scheduling",
-        "Customised learning plan",
-        "Intensive exam strategies",
-        "Detailed progress tracking",
-        "Direct parent communication",
-        "Targeted skill development",
-      ],
-      popular: true,
     },
     {
       name: "Selective School Prep",
-      price: "$750",
-      period: "per term",
-      description: "Complete selective exam preparation program",
+      description: "Complete Selective School exam preparation program",
       features: [
         "12-week structured program",
         "All exam components covered",
-        "Weekly 2-hour sessions",
+        "3.5-hour weekly online sessions",
         "Full-length practice exams",
         "Exam technique workshops",
         "Parent information sessions",
         "Comprehensive study materials",
         "Free trial lesson included",
       ],
-      popular: false,
+      popular: true,
     },
   ];
 
@@ -62,26 +41,26 @@ const Classes = () => {
       <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/30 py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold">Classes & Pricing</h1>
+            <h1 className="text-4xl md:text-6xl font-bold">Our Classes</h1>
             <p className="text-xl text-muted-foreground">
-              Flexible learning options designed to fit your child's needs and schedule
+              3.5-hour weekly online classes designed to fit your child's needs and schedule
             </p>
           </div>
         </div>
       </section>
 
-      {/* Pricing Cards */}
+      {/* Program Cards */}
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {pricingTiers.map((tier, index) => (
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {programs.map((program, index) => (
               <Card
                 key={index}
                 className={`p-8 relative hover:shadow-2xl transition-all duration-300 ${
-                  tier.popular ? "border-2 border-primary shadow-xl scale-105" : "border-2 border-transparent"
+                  program.popular ? "border-2 border-primary shadow-xl" : "border-2 border-transparent"
                 }`}
               >
-                {tier.popular && (
+                {program.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <span className="bg-primary text-white px-4 py-1.5 rounded-full text-sm font-semibold">
                       Most Popular
@@ -91,16 +70,12 @@ const Classes = () => {
 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
-                    <p className="text-sm text-muted-foreground mb-4">{tier.description}</p>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-4xl font-bold text-primary">{tier.price}</span>
-                      <span className="text-muted-foreground">/{tier.period}</span>
-                    </div>
+                    <h3 className="text-2xl font-bold mb-2">{program.name}</h3>
+                    <p className="text-sm text-muted-foreground">{program.description}</p>
                   </div>
 
                   <div className="space-y-3">
-                    {tier.features.map((feature, featureIndex) => (
+                    {program.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-start gap-3">
                         <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                         <span className="text-sm">{feature}</span>
@@ -111,7 +86,7 @@ const Classes = () => {
                   <Button
                     asChild
                     className={`w-full rounded-full ${
-                      tier.popular
+                      program.popular
                         ? "bg-primary hover:bg-primary/90"
                         : "bg-secondary text-primary hover:bg-secondary/80"
                     }`}
@@ -147,7 +122,7 @@ const Classes = () => {
               <Card className="p-6 bg-white">
                 <h3 className="font-bold text-lg mb-3">Practice Exams</h3>
                 <p className="text-muted-foreground">
-                  Regular practice tests under exam conditions help students build familiarity and confidence with the selective school exam format.
+                  Regular practice tests under exam conditions help students build familiarity and confidence with the Selective School exam format.
                 </p>
               </Card>
 
@@ -159,9 +134,9 @@ const Classes = () => {
               </Card>
 
               <Card className="p-6 bg-white">
-                <h3 className="font-bold text-lg mb-3">Flexible Scheduling</h3>
+                <h3 className="font-bold text-lg mb-3">Online Convenience</h3>
                 <p className="text-muted-foreground">
-                  We offer multiple class times throughout the week to accommodate busy family schedules, with makeup sessions available when needed.
+                  All classes are conducted online, providing flexibility and convenience while maintaining high-quality interactive learning experiences.
                 </p>
               </Card>
             </div>
