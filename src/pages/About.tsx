@@ -74,7 +74,7 @@ const About = () => {
             <Card className="p-8 md:p-12 bg-white">
               <div className="space-y-6 text-muted-foreground">
                 <p className="text-lg leading-relaxed">
-                  <strong className="text-foreground">Small Group Learning:</strong> We maintain small class sizes (maximum 6 students) to ensure every child receives individual attention and can actively participate in lessons. This approach allows us to identify and address each student's unique challenges while fostering collaborative learning.
+                  <strong className="text-foreground">Small Group Learning:</strong> We maintain small class sizes to ensure every child receives individual attention and can actively participate in lessons. This approach allows us to identify and address each student's unique challenges while fostering collaborative learning.
                 </p>
                 
                 <p className="text-lg leading-relaxed">
