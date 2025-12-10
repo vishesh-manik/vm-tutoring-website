@@ -204,15 +204,16 @@ const Contact = () => {
                     </div>
                   </Card>
 
-                  <Card className="p-6 bg-primary text-white border-none">
-                    <h3 className="font-bold text-xl mb-3">Free Trial Lesson</h3>
-                    <p className="mb-4">
-                      Experience our teaching approach firsthand. Book a complimentary trial lesson with no obligation.
-                    </p>
-                    <p className="font-semibold">Available spots are limited!</p>
-                  </Card>
                 </div>
               </div>
+
+              <Card className="p-6 bg-primary text-white border-none">
+                <h3 className="font-bold text-xl mb-3">Free Trial Lesson</h3>
+                <p className="mb-4">
+                  Interested in a free trial lesson? Mention it in your message and we'll set one up for you!
+                </p>
+                <p className="font-semibold">Available spots are limited!</p>
+              </Card>
             </div>
           </div>
         </div>
