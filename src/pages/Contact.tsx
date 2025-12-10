@@ -100,11 +100,11 @@ const Contact = () => {
       {/* Contact Form & Info */}
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
             {/* Contact Form */}
             <div id="send-message">
               <Card className="p-8">
-                <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
+                <h2 className="text-2xl font-bold mb-8">Send us a Message</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -171,7 +171,7 @@ const Contact = () => {
             {/* Contact Info */}
             <div className="flex flex-col">
               <div>
-                <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+                <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
                 <div className="space-y-6">
                   <Card className="p-6 hover:shadow-lg transition-shadow">
                     <div className="flex items-start gap-4">
