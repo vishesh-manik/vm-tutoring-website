@@ -35,7 +35,7 @@ const Navigation = () => {
               </NavLink>
             ))}
             <NavLink
-              to="/contact"
+              to="/contact#send-message"
               className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full hover:opacity-90 transition-opacity font-semibold"
             >
               Book Free Consultation
@@ -66,7 +66,7 @@ const Navigation = () => {
               </NavLink>
             ))}
             <NavLink
-              to="/contact"
+              to="/contact#send-message"
               onClick={() => setIsOpen(false)}
               className="block mx-4 mt-4 bg-primary text-primary-foreground px-6 py-3 rounded-full hover:opacity-90 transition-opacity text-center font-semibold"
             >
