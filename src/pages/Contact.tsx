@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -180,8 +180,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">Phone</h3>
-                        <a href="tel:+61400000000" className="text-muted-foreground hover:text-primary transition-colors">
-                          0400 000 000
+                        <a href="tel:+61491749259" className="text-muted-foreground hover:text-primary transition-colors">
+                          0491 749 259
                         </a>
                       </div>
                     </div>
@@ -195,40 +195,24 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold mb-1">Email</h3>
                         <a
-                          href="mailto:info@vmtutoring.com.au"
+                          href="mailto:vmtutoring23@gmail.com"
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          info@vmtutoring.com.au
+                          vmtutoring23@gmail.com
                         </a>
                       </div>
                     </div>
                   </Card>
 
-                  <Card className="p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 bg-primary/10 rounded-lg">
-                        <MapPin className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold mb-1">Location</h3>
-                        <p className="text-muted-foreground">
-                          Servicing Melbourne Metro
-                          <br />
-                          Victoria, Australia
-                        </p>
-                      </div>
-                    </div>
+                  <Card className="p-6 bg-primary text-white border-none">
+                    <h3 className="font-bold text-xl mb-3">Free Trial Lesson</h3>
+                    <p className="mb-4">
+                      Experience our teaching approach firsthand. Book a complimentary trial lesson with no obligation.
+                    </p>
+                    <p className="font-semibold">Available spots are limited!</p>
                   </Card>
                 </div>
               </div>
-
-              <Card className="p-6 bg-primary text-white border-none">
-                <h3 className="font-bold text-xl mb-3">Free Trial Lesson</h3>
-                <p className="mb-4">
-                  Experience our teaching approach firsthand. Book a complimentary trial lesson with no obligation.
-                </p>
-                <p className="font-semibold">Available spots are limited!</p>
-              </Card>
             </div>
           </div>
         </div>
