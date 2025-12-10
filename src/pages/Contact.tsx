@@ -169,7 +169,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="space-y-8">
+            <div className="flex flex-col">
               <div>
                 <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
                 <div className="space-y-6">
@@ -207,7 +207,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <Card className="p-6 bg-primary text-white border-none">
+              <Card className="p-6 bg-primary text-white border-none mt-6 flex-1 flex flex-col justify-center">
                 <h3 className="font-bold text-xl mb-3">Free Trial Lesson</h3>
                 <p className="mb-4">
                   Interested in a free trial lesson? Mention it in your message and we'll set one up for you!
