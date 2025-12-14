@@ -58,28 +58,28 @@ const Contact = () => {
 
   const faqs = [
     {
-      question: "When should my child start preparing for the selective exam?",
+      question: "When should my child start preparing for the Selective School exam?",
       answer: "We recommend starting preparation at least 6-12 months before the exam date. This allows sufficient time to build strong foundations and develop exam techniques without overwhelming pressure.",
     },
     {
-      question: "What is included in the free trial lesson?",
-      answer: "The free trial lesson is a full-length session where your child will experience our teaching style, complete a diagnostic assessment, and receive personalised feedback. You'll also have the opportunity to discuss your child's needs and goals.",
+      question: "What programs do you offer?",
+      answer: "We offer three main programs: our Selective School Program (3.5-hour weekly online sessions with ACER-based preparation), Scholarship Exam Preparation (2-hour lessons), and 1:1 Personalised Tutoring for specialised maths and English support. All programs are delivered online in small group settings.",
     },
     {
-      question: "How often are classes held?",
-      answer: "Group classes run weekly, typically for 2 hours per session. One-on-one tutoring offers flexible scheduling based on your availability. We also provide makeup sessions for any missed classes.",
+      question: "What does the Selective School Program cover?",
+      answer: "Our ACER-based program covers mathematics, reading comprehension, verbal and quantitative ability, as well as persuasive and creative writing for Selective School exams. Students receive weekly mock tests, timed practice, and proven strategies for exam success.",
     },
     {
-      question: "What materials do students need?",
-      answer: "All study materials, practice worksheets, and resources are provided. Students just need to bring a pencil case with writing materials and a positive attitude to learn!",
+      question: "Are all classes conducted online?",
+      answer: "Yes, VM Tutoring operates exclusively online. All classes are delivered remotely, making it convenient for families across Victoria. Our online format ensures flexible, accessible learning from the comfort of your home.",
     },
     {
-      question: "How do you track student progress?",
-      answer: "We provide weekly progress reports via email, conduct regular practice tests, and hold parent-teacher meetings each term. You'll always know exactly how your child is progressing.",
+      question: "Who is the tutor?",
+      answer: "Classes are led by Vishesh Manik, an experienced Selective School tutor with over 3 years of experience, having tutored 50+ students, and a YouTube channel with 2K+ subscribers dedicated to helping students succeed.",
     },
     {
-      question: "What is your success rate?",
-      answer: "Over 95% of our students who complete our full selective school preparation program successfully gain entry to their preferred selective schools. Our structured approach and personalised support deliver consistent results.",
+      question: "Do you offer free consultations?",
+      answer: "Yes! We offer free 1:1 consultations to discuss your child's needs, goals, and how our programs can help. Simply send us a message through the contact form to book your consultation.",
     },
   ];
 
@@ -209,10 +209,13 @@ const Contact = () => {
 
               <Card className="p-6 bg-primary text-white border-none mt-6 flex-1 flex flex-col justify-center">
                 <h3 className="font-bold text-xl mb-3">Free Trial Lesson</h3>
-                <p className="mb-4">
-                  Interested in a free trial lesson? Mention it in your message and we'll set one up for you!
+                <p className="mb-2">
+                  Experience our ACER-based Selective School preparation firsthand! Your child will join a real class session to see our teaching style in action.
                 </p>
-                <p className="font-semibold">Available spots are limited!</p>
+                <p className="mb-4 text-white/90">
+                  Mention "free trial" in your message and we'll set one up for you.
+                </p>
+                <p className="font-semibold text-white/95">Available spots are limited — book yours today!</p>
               </Card>
             </div>
           </div>
