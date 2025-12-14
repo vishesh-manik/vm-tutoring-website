@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail, Phone } from "lucide-react";
+import { Facebook, Linkedin, Mail, Phone } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-bold text-lg">VM Tutoring</h3>
             <p className="text-sm text-muted-foreground">
-              Expert selective school tutoring for Victorian students. Personalised teaching with proven results.
+              Expert Selective School tutoring for Victorian students. Personalised teaching with proven results.
             </p>
           </div>
 
@@ -25,10 +25,10 @@ const Footer = () => {
                 About
               </NavLink>
               <NavLink to="/classes" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Classes & Pricing
+                Our Programs
               </NavLink>
-              <NavLink to="/testimonials" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Testimonials
+              <NavLink to="/contact#contact-form" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Book Free Consultation
               </NavLink>
             </nav>
           </div>
@@ -37,13 +37,13 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-bold text-lg">Contact</h3>
             <div className="space-y-3">
-              <a href="tel:+61400000000" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="tel:0491749259" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
                 <Phone className="h-4 w-4" />
-                <span>0400 000 000</span>
+                <span>0491 749 259</span>
               </a>
-              <a href="mailto:info@vmtutoring.com.au" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="mailto:vmtutoring23@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="h-4 w-4" />
-                <span>info@vmtutoring.com.au</span>
+                <span>vmtutoring23@gmail.com</span>
               </a>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
             <h3 className="font-bold text-lg">Follow Us</h3>
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61584006451169"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white hover:bg-primary hover:text-white transition-colors"
@@ -61,19 +61,19 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.linkedin.com/company/vm-tutoring"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-white hover:bg-primary hover:text-white transition-colors"
               >
-                <Instagram className="h-5 w-5" />
+                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} VM Tutoring. All rights reserved.</p>
+          <p>VM Tutoring | ABN 56 467 425 637</p>
         </div>
       </div>
     </footer>
