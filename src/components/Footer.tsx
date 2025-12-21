@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>VM Tutoring | ABN 56 467 425 637</p>
+          <p>&copy; {new Date().getFullYear()} VM Tutoring | ABN 56 467 425 637</p>
         </div>
       </div>
     </footer>
