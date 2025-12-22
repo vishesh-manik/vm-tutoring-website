@@ -230,11 +230,6 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Button asChild variant="outline" size="lg" className="rounded-full">
-              <NavLink to="/testimonials">Read More Testimonials</NavLink>
-            </Button>
-          </div>
         </div>
       </section>
 
