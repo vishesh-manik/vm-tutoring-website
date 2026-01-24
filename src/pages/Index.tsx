@@ -51,7 +51,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center space-y-8 fade-in-up">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
               Selective School Tutoring
-              <span className="block text-primary mt-2">That Gets Results</span>
+              <span className="block text-primary mt-2">For Your Success</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Expert ACER-based preparation for Victorian Selective School Exams. Personalised teaching, small groups, and proven strategies to help your child succeed.
@@ -231,7 +231,7 @@ const Index = () => {
 
           <div className="text-center mt-12">
             <Button asChild size="lg" className="rounded-full">
-              <NavLink to="/free-resources">
+              <NavLink to="/free-resources#youtube-videos">
                 View More Videos
                 <ArrowRight className="ml-2 h-5 w-5" />
               </NavLink>
