@@ -1,5 +1,5 @@
 import { NavLink } from "@/components/NavLink";
-import { BookOpen, Users, TrendingUp, Award, CheckCircle2, ArrowRight } from "lucide-react";
+import { BookOpen, TrendingUp, Award, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import tutorPhoto from "@/assets/tutor-photo.jpg";
@@ -32,16 +32,14 @@ const Index = () => {
     "Comprehensive Writing Support",
   ];
 
-  const testimonials = [
+  const featuredVideos = [
     {
-      name: "Sarah Chen",
-      role: "Parent",
-      text: "VM Tutoring helped my daughter gain entry to Melbourne High. The personalised attention and structured approach made all the difference.",
+      id: "d6qSHI455oI",
+      title: "Selective School Preparation Tips",
     },
     {
-      name: "Michael Patel",
-      role: "Student",
-      text: "The reasoning techniques I learned helped me think differently about problems. I felt so prepared for the exam!",
+      id: "4hVvBKzStcQ",
+      title: "Study Strategies for Success",
     },
   ];
 
@@ -205,31 +203,40 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Success Stories */}
+      {/* Free Resources */}
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="text-3xl md:text-5xl font-bold">Success Stories</h2>
+            <h2 className="text-3xl md:text-5xl font-bold">Free Resources</h2>
             <p className="text-lg text-muted-foreground">
-              Hear from parents and students who achieved their Selective School goals
+              Explore our YouTube channel for free tips, strategies, and practice materials
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="p-8 hover:shadow-xl transition-shadow">
-                <div className="flex items-center gap-2 mb-4">
-                  <Users className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  </div>
+            {featuredVideos.map((video, index) => (
+              <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <div className="aspect-video">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.id}`}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
                 </div>
-                <p className="text-muted-foreground italic">&ldquo;{testimonial.text}&rdquo;</p>
-              </Card>
+              </div>
             ))}
           </div>
 
+          <div className="text-center mt-12">
+            <Button asChild size="lg" className="rounded-full">
+              <NavLink to="/youtube">
+                View More Videos
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </NavLink>
+            </Button>
+          </div>
         </div>
       </section>
 
