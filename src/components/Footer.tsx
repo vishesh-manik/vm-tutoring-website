@@ -27,6 +27,9 @@ const Footer = () => {
               <NavLink to="/classes" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Our Programs
               </NavLink>
+              <NavLink to="/free-resources" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Free Resources
+              </NavLink>
               <NavLink to="/contact#contact-form" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Book Free Consultation
               </NavLink>
