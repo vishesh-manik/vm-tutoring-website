@@ -24,24 +24,24 @@ const FreeResources = () => {
 
   const mockExams = [
     {
-      title: "Mock Exam 1",
-      description: "Full-length practice test",
-      link: "#", // Replace with actual link
+      title: "Reading Comprehension",
+      description: "50 Questions - 35 Minutes",
+      link: "https://forms.gle/Zv5dgnVxMCTehbmV6",
     },
     {
-      title: "Mock Exam 2",
-      description: "Timed practice test",
-      link: "#", // Replace with actual link
+      title: "Mathematical Reasoning",
+      description: "35 Questions - 30 Minutes",
+      link: "https://forms.gle/Ro6yimFJWzUQ7ffv6",
     },
     {
-      title: "Mock Exam 3",
-      description: "Reading & Writing focus",
-      link: "#", // Replace with actual link
+      title: "Verbal Ability",
+      description: "50 Questions - 30 Minutes",
+      link: "https://forms.gle/J1bxioyLZvpwqtva9",
     },
     {
-      title: "Mock Exam 4",
-      description: "Maths & Reasoning focus",
-      link: "#", // Replace with actual link
+      title: "Quantitative Ability",
+      description: "50 Questions - 30 Minutes",
+      link: "https://forms.gle/pRhbBsYQqYj9kP1v8",
     },
   ];
 
@@ -78,7 +78,7 @@ const FreeResources = () => {
         </div>
 
         {/* YouTube Videos Section */}
-        <div className="max-w-5xl mx-auto">
+        <div id="youtube-videos" className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <Youtube className="h-8 w-8 text-primary" />
             <h2 className="text-2xl md:text-3xl font-bold">YouTube Videos</h2>
@@ -101,15 +101,15 @@ const FreeResources = () => {
 
           {/* CTA Button */}
           <div className="text-center">
-            <Button asChild size="lg" className="rounded-full">
+            <Button asChild size="lg" className="rounded-full px-10 py-7 text-lg">
               <a
                 href="https://www.youtube.com/@vmstudyguides22"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Youtube className="mr-2 h-5 w-5" />
+                <Youtube className="mr-3 h-6 w-6" />
                 Visit Our YouTube Channel
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-3 h-6 w-6" />
               </a>
             </Button>
           </div>
