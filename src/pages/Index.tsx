@@ -231,7 +231,7 @@ const Index = () => {
 
           <div className="text-center mt-12">
             <Button asChild size="lg" className="rounded-full">
-              <NavLink to="/youtube">
+              <NavLink to="/free-resources">
                 View More Videos
                 <ArrowRight className="ml-2 h-5 w-5" />
               </NavLink>

@@ -9,7 +9,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Classes from "./pages/Classes";
 import Contact from "./pages/Contact";
-import YouTube from "./pages/YouTube";
+import FreeResources from "./pages/FreeResources";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,7 +26,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/youtube" element={<YouTube />} />
+          <Route path="/free-resources" element={<FreeResources />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
