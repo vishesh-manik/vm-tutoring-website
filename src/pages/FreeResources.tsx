@@ -13,12 +13,12 @@ const FreeResources = () => {
       title: "Study Strategies",
     },
     {
-      id: "gwtTubzTAUc",
-      title: "Practice Techniques",
-    },
-    {
       id: "d6qSHI455oI",
       title: "Exam Preparation",
+    },
+    {
+      id: "gwtTubzTAUc",
+      title: "Practice Techniques",
     },
   ];
 
@@ -62,7 +62,7 @@ const FreeResources = () => {
             <FileText className="h-8 w-8 text-primary" />
             <h2 className="text-2xl md:text-3xl font-bold">Free Mock Exams</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {mockExams.map((exam, index) => (
               <Card key={index} className="p-6 hover:shadow-lg transition-shadow border-2 hover:border-primary/30">
                 <a href={exam.link} target="_blank" rel="noopener noreferrer" className="block h-full">
