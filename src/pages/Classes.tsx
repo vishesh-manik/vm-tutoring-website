@@ -105,7 +105,7 @@ const Classes = () => {
                         : "bg-secondary text-primary hover:bg-secondary/80"
                     }`}
                   >
-                    <NavLink to="/contact">Get Started</NavLink>
+                    <NavLink to="/contact#send-message">Get Started</NavLink>
                   </Button>
                 </div>
               </Card>
@@ -167,7 +167,7 @@ const Classes = () => {
               Experience our teaching approach with a complimentary trial lesson. No commitment required.
             </p>
             <Button asChild size="lg" variant="secondary" className="rounded-full px-8">
-              <NavLink to="/contact">Book Your Free Trial</NavLink>
+              <NavLink to="/contact#send-message">Book Your Free Trial</NavLink>
             </Button>
           </Card>
         </div>
