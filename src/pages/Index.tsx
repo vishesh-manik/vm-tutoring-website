@@ -51,7 +51,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center space-y-8 fade-in-up">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
               Selective School Tutoring
-              <span className="block text-primary mt-2">For Your Success</span>
+              <span className="block text-primary mt-2">Trusted by Thousands</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Expert ACER-based preparation for Victorian Selective School Exams. Personalised teaching, small groups, and proven strategies to help your child succeed.
