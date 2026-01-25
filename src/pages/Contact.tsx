@@ -20,8 +20,10 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
+    hearAboutUs: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     if (location.hash) {
@@ -34,11 +36,11 @@ const Contact = () => {
     }
   }, [location]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Simple validation
-    if (!formData.name || !formData.email || !formData.message) {
+    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
       toast({
         title: "Missing Information",
         description: "Please fill in all required fields.",
@@ -47,13 +49,41 @@ const Contact = () => {
       return;
     }
 
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
+    setIsSubmitting(true);
 
-    // Reset form
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    try {
+      const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScQR2N3BXTe6s1RfMcfo77LUn9h23dyKJ3kra4YqthR9yH1_A/formResponse";
+      
+      const formDataToSend = new FormData();
+      formDataToSend.append("entry.2005620554", formData.name);
+      formDataToSend.append("entry.1045781291", formData.email);
+      formDataToSend.append("entry.967765721", formData.phone);
+      formDataToSend.append("entry.107001782", formData.hearAboutUs);
+      formDataToSend.append("entry.839337160", formData.message);
+
+      await fetch(googleFormUrl, {
+        method: "POST",
+        mode: "no-cors",
+        body: formDataToSend,
+      });
+
+      toast({
+        title: "Message Sent!",
+        description: "We'll get back to you within 24 hours.",
+      });
+
+      // Reset form
+      setFormData({ name: "", email: "", phone: "", hearAboutUs: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const faqs = [
@@ -135,7 +165,7 @@ const Contact = () => {
 
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                      Phone Number
+                      Phone Number *
                     </label>
                     <Input
                       id="phone"
@@ -143,6 +173,19 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="0400 000 000"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="hearAboutUs" className="block text-sm font-medium mb-2">
+                      Where did you hear about us?
+                    </label>
+                    <Input
+                      id="hearAboutUs"
+                      value={formData.hearAboutUs}
+                      onChange={(e) => setFormData({ ...formData, hearAboutUs: e.target.value })}
+                      placeholder="e.g. Google, Facebook, Friend referral..."
                     />
                   </div>
 
@@ -155,14 +198,14 @@ const Contact = () => {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Tell us about your child's year level, goals, and any specific needs..."
-                      rows={6}
+                      rows={4}
                       required
                     />
                   </div>
 
-                  <Button type="submit" className="w-full rounded-full" size="lg">
+                  <Button type="submit" className="w-full rounded-full" size="lg" disabled={isSubmitting}>
                     <Send className="mr-2 h-4 w-4" />
-                    Send Message
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </Card>
