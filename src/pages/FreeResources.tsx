@@ -57,12 +57,12 @@ const FreeResources = () => {
         </div>
 
         {/* Mock Exams Section */}
-        <div className="max-w-5xl mx-auto mb-20">
+        <div className="max-w-5xl mx-auto mb-16">
           <div className="flex items-center gap-3 mb-8">
             <FileText className="h-8 w-8 text-primary" />
             <h2 className="text-2xl md:text-3xl font-bold">Free Mock Exams</h2>
           </div>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-8">
             {mockExams.map((exam, index) => (
               <Card key={index} className="p-6 hover:shadow-lg transition-shadow border-2 hover:border-primary/30">
                 <a href={exam.link} target="_blank" rel="noopener noreferrer" className="block h-full">
