@@ -52,19 +52,22 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScQR2N3BXTe6s1RfMcfo77LUn9h23dyKJ3kra4YqthR9yH1_A/formResponse";
-      
-      const formDataToSend = new FormData();
-      formDataToSend.append("entry.2005620554", formData.name);
-      formDataToSend.append("entry.1045781291", formData.email);
-      formDataToSend.append("entry.967765721", formData.phone);
-      formDataToSend.append("entry.107001782", formData.hearAboutUs);
-      formDataToSend.append("entry.839337160", formData.message);
-
+      const googleFormUrl =
+        "https://docs.google.com/forms/d/e/1FAIpQLScQR2N3BXTe6s1RfMcfo77LUn9h23dyKJ3kra4YqthR9yH1_A/formResponse";
+      const body = new URLSearchParams({
+        "entry.2005620554": formData.name,
+        "entry.1045781291": formData.email,
+        "entry.967765721": formData.phone,
+        "entry.107001782": formData.hearAboutUs,
+        "entry.839337160": formData.message,
+      });
       await fetch(googleFormUrl, {
         method: "POST",
         mode: "no-cors",
-        body: formDataToSend,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body,
       });
 
       toast({
