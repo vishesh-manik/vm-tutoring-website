@@ -206,6 +206,9 @@ const Contact = () => {
                     <Send className="mr-2 h-4 w-4" />
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
+                  <p className="text-xs text-muted-foreground text-center">
+                    We only use your details to respond to inquiries.
+                  </p>
                 </form>
               </Card>
             </div>
