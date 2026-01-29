@@ -129,21 +129,21 @@ const Classes = () => {
               <Card className="p-6 bg-white">
                 <h3 className="font-bold text-lg mb-3">Study Materials</h3>
                 <p className="text-muted-foreground">
-                  All students receive comprehensive study guides, practice worksheets, and access to our resource library covering mathematics, English, and reasoning.
+                  Weekly content, consolidation resources and guides to support students throughout their preparation journey.
                 </p>
               </Card>
 
               <Card className="p-6 bg-white">
                 <h3 className="font-bold text-lg mb-3">Practice Exams</h3>
                 <p className="text-muted-foreground">
-                  Regular practice tests under exam conditions help students build familiarity and confidence with exam formats.
+                  Weekly ACER-style mock exams with 1800+ questions to build familiarity and confidence with exam formats.
                 </p>
               </Card>
 
               <Card className="p-6 bg-white">
                 <h3 className="font-bold text-lg mb-3">Progress Tracking</h3>
                 <p className="text-muted-foreground">
-                  Weekly reports keep parents informed about their child's development, highlighting strengths and areas requiring additional focus.
+                  Parents can schedule feedback discussions anytime throughout the programs to be informed about their child's development, strengths and areas requiring focus.
                 </p>
               </Card>
 

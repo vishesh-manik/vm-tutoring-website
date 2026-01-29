@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-bold text-lg">VM Tutoring</h3>
             <p className="text-sm text-muted-foreground">
-              Expert Selective School tutoring for Victorian students. Personalised teaching with proven results.
+              Expert Selective School tutoring for Victorian students. Personalised teaching dedicated to your child's success.
             </p>
           </div>
 

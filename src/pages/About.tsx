@@ -44,17 +44,25 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-bold">Our Story</h2>
             </div>
             
-            <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
+            <div className="prose prose-lg max-w-none space-y-4 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                VM Tutoring was founded with a simple yet powerful mission: to help Victorian students unlock their full potential and gain entry to their dream Selective Schools. With years of experience in education and a deep understanding of the ACER-based Selective School entrance process, we've developed a proven approach that combines academic excellence with personalised support.
+                We don't just teach content. We teach the patterns behind the questions.
               </p>
               
               <p className="text-lg leading-relaxed">
-                Our tutoring methodology is built on three core pillars: comprehensive subject mastery, strategic ACER exam techniques, and confidence building. We believe that success in Selective School exams comes not just from knowing the content, but from understanding how to apply knowledge effectively under exam conditions.
+                Every ACER exam has a logic. Once you see it, everything clicks.
               </p>
               
               <p className="text-lg leading-relaxed">
-                Over the years, we've helped hundreds of students achieve their Selective School goals, with many gaining entry to prestigious schools including Melbourne High, Mac.Robertson Girls' High School, and Nossal High School. Our track record speaks to our commitment to excellence and our students' dedication to their academic journeys.
+                That's what VM Tutoring is all about—helping students crack the code.
+              </p>
+              
+              <p className="text-lg leading-relaxed">
+                Our students have gone on to Melbourne High, Mac.Robertson Girls' High School, Nossal High School, and Suzanne Cory High School.
+              </p>
+              
+              <p className="text-lg leading-relaxed">
+                Your child could be next.
               </p>
             </div>
           </div>
@@ -79,11 +87,11 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg leading-relaxed">
-                  <strong className="text-foreground">Structured ACER Preparation:</strong> Our curriculum follows a carefully structured program that covers all aspects of the ACER Selective School exam—mathematics, reading comprehension, numerical reasoning, and verbal reasoning. We systematically build skills from foundational concepts to advanced problem-solving.
+                  <strong className="text-foreground">Structured ACER Preparation:</strong> Our curriculum follows a carefully structured program that covers all aspects of the ACER Selective School exam—mathematical reasoning, quantitative ability, verbal ability, reading comprehension, and writing. We systematically build skills from foundational concepts to advanced problem-solving.
                 </p>
                 
                 <p className="text-lg leading-relaxed">
-                  <strong className="text-foreground">Regular Feedback:</strong> Parents receive weekly updates on their child's progress, including strengths, areas for improvement, and homework completion. This transparent communication ensures everyone is aligned on the student's learning journey.
+                  <strong className="text-foreground">Regular Feedback:</strong> Parents can schedule feedback discussions anytime throughout the programs to be informed about their child's development, strengths and areas requiring focus.
                 </p>
                 
                 <p className="text-lg leading-relaxed">
@@ -144,7 +152,7 @@ const About = () => {
               <div className="flex justify-center">
                 <Card className="p-8 shadow-xl bg-background/95 backdrop-blur max-w-md">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    <span className="font-semibold text-foreground">Vishesh Manik</span> brings over three years of dedicated experience in Selective School preparation, having helped 50+ students achieve their academic dreams. His teaching approach combines proven ACER exam strategies with personalised attention, ensuring each student reaches their full potential. Through his YouTube channel with 2,000+ subscribers, he shares free resources and tips to support students on their Selective School journey.
+                    <span className="font-semibold text-foreground">Vishesh Manik</span> brings over three years of dedicated experience in Selective School preparation, having helped hundreds of students through his online community achieve their academic dreams. His teaching approach combines proven ACER exam strategies with personalised attention, ensuring each student reaches their full potential. Through his YouTube channel with 2,000+ subscribers, he shares free resources and tips to support students on their Selective School journey.
                   </p>
                 </Card>
               </div>

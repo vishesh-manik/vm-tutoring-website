@@ -46,7 +46,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-white to-secondary/30 py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary/15 via-white to-secondary/40 py-20 md:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-8 fade-in-up">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
@@ -157,7 +157,7 @@ const Index = () => {
                   <div className="absolute -right-20 top-20 animate-fade-in hidden lg:block" style={{ animationDelay: "150ms" }}>
                     <div className="bg-background rounded-full p-4 shadow-lg border border-primary/20 hover:shadow-xl transition-shadow">
                       <div className="text-center">
-                        <p className="text-lg font-bold text-primary">50+</p>
+                        <p className="text-lg font-bold text-primary">100s</p>
                         <p className="text-xs text-muted-foreground whitespace-nowrap">Students</p>
                       </div>
                     </div>
@@ -178,7 +178,7 @@ const Index = () => {
               <div className="flex justify-center">
                 <Card className="p-8 shadow-xl bg-background/95 backdrop-blur">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    <span className="font-semibold text-foreground">Vishesh Manik</span> brings over three years of dedicated experience in Selective School preparation, having helped 50+ students achieve their academic dreams. His teaching approach combines proven exam strategies with personalised attention, ensuring each student reaches their full potential. Through his YouTube channel with 2,000+ subscribers, he shares free resources and tips to support students on their Selective School journey.
+                    <span className="font-semibold text-foreground">Vishesh Manik</span> brings over three years of dedicated experience in Selective School preparation, having helped hundreds of students through his online community achieve their academic dreams. His teaching approach combines proven exam strategies with personalised attention, ensuring each student reaches their full potential. Through his YouTube channel with 2,000+ subscribers, he shares free resources and tips to support students on their Selective School journey.
                   </p>
                 </Card>
                 
@@ -189,8 +189,8 @@ const Index = () => {
                     <p className="text-xs text-muted-foreground">Years Experience</p>
                   </div>
                   <div className="bg-background rounded-2xl p-4 shadow-md border border-primary/20 text-center">
-                    <p className="text-xl font-bold text-primary">50+</p>
-                    <p className="text-xs text-muted-foreground">Students Tutored</p>
+                    <p className="text-xl font-bold text-primary">100s</p>
+                    <p className="text-xs text-muted-foreground">Students Reached</p>
                   </div>
                   <div className="bg-background rounded-2xl p-4 shadow-md border border-primary/20 text-center">
                     <p className="text-xl font-bold text-primary">2K+</p>
