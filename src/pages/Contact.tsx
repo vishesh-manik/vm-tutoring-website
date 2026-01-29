@@ -36,10 +36,10 @@ const Contact = () => {
     }
   }, [location]);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    // Simple validation - prevent if invalid
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
     if (!formData.name || !formData.email || !formData.phone || !formData.message) {
-      e.preventDefault();
       toast({
         title: "Missing Information",
         description: "Please fill in all required fields.",
@@ -48,18 +48,40 @@ const Contact = () => {
       return;
     }
 
-    // Allow form to submit naturally to hidden iframe
     setIsSubmitting(true);
-    
-    // Show success and reset after a short delay (form submits to iframe)
-    setTimeout(() => {
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbwI6QWia6YDMcwFeXr84bDn2vMcqt6mRf6u-myqZj0c4zrXBjCDiGZCLzsBsaaKL8MJ/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            source: formData.hearAboutUs,
+            message: formData.message,
+          }),
+        }
+      );
+
       toast({
         title: "Message Sent!",
         description: "We'll get back to you within 24 hours.",
       });
       setFormData({ name: "", email: "", phone: "", hearAboutUs: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const faqs = [
@@ -91,8 +113,6 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hidden iframe for form submission */}
-      <iframe name="hidden_iframe" style={{ display: "none" }} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/30 py-20 md:py-28">
@@ -114,20 +134,13 @@ const Contact = () => {
             <div id="send-message">
               <Card className="p-8">
                 <h2 className="text-2xl font-bold mb-8">Send us a Message</h2>
-                <form
-                  action="https://docs.google.com/forms/d/e/1FAIpQLScQR2N3BXTe6s1RfMcfo77LUn9h23dyKJ3kra4YqthR9yH1_A/formResponse"
-                  method="POST"
-                  target="hidden_iframe"
-                  onSubmit={handleSubmit}
-                  className="space-y-6"
-                >
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
                       Parent/Guardian Name *
                     </label>
                     <Input
                       id="name"
-                      name="entry.2005620554"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="John Smith"
@@ -141,7 +154,6 @@ const Contact = () => {
                     </label>
                     <Input
                       id="email"
-                      name="entry.1045781291"
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -156,7 +168,6 @@ const Contact = () => {
                     </label>
                     <Input
                       id="phone"
-                      name="entry.967765721"
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -171,7 +182,6 @@ const Contact = () => {
                     </label>
                     <Input
                       id="hearAboutUs"
-                      name="entry.107001782"
                       value={formData.hearAboutUs}
                       onChange={(e) => setFormData({ ...formData, hearAboutUs: e.target.value })}
                       placeholder="e.g. Google, Facebook, Friend referral..."
@@ -184,7 +194,6 @@ const Contact = () => {
                     </label>
                     <Textarea
                       id="message"
-                      name="entry.839337160"
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Tell us about your child's year level, goals, and any specific needs..."
