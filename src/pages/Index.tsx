@@ -131,15 +131,15 @@ const Index = () => {
               <h2 className="text-3xl md:text-5xl font-bold">Meet Your Tutor</h2>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-stretch max-w-5xl mx-auto">
               {/* Image Side with Stats */}
-              <div className="relative flex justify-center">
+              <div className="relative flex justify-center items-center">
                 <div className="relative inline-block">
                   <div className="text-center">
                     <img 
                       src={tutorPhoto} 
                       alt="Vishesh Manik - Selective School Tutor"
-                      className="w-80 h-80 object-cover object-top rounded-2xl shadow-2xl"
+                      className="w-96 h-96 object-cover object-top rounded-2xl shadow-2xl"
                     />
                     <p className="mt-4 text-2xl font-bold text-primary-foreground">Vishesh Manik</p>
                   </div>
@@ -157,7 +157,7 @@ const Index = () => {
                   <div className="absolute -right-20 top-20 animate-fade-in hidden lg:block" style={{ animationDelay: "150ms" }}>
                     <div className="bg-background rounded-full p-4 shadow-lg border border-primary/20 hover:shadow-xl transition-shadow">
                       <div className="text-center">
-                        <p className="text-lg font-bold text-primary">100s</p>
+                        <p className="text-lg font-bold text-primary">50+</p>
                         <p className="text-xs text-muted-foreground whitespace-nowrap">Students</p>
                       </div>
                     </div>
@@ -175,8 +175,8 @@ const Index = () => {
               </div>
 
               {/* Description Side */}
-              <div className="flex justify-center">
-                <Card className="p-8 shadow-xl bg-background/95 backdrop-blur">
+              <div className="flex items-center">
+                <Card className="p-8 shadow-xl bg-background/95 backdrop-blur h-full flex items-center">
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     <span className="font-semibold text-foreground">Vishesh Manik</span> brings over three years of dedicated experience in Selective School preparation, having helped hundreds of students through his online community achieve their academic dreams. His teaching approach combines proven exam strategies with personalised attention, ensuring each student reaches their full potential. Through his YouTube channel with 2,000+ subscribers, he shares free resources and tips to support students on their Selective School journey.
                   </p>

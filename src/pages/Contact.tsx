@@ -252,15 +252,18 @@ const Contact = () => {
                 </div>
               </div>
 
-              <Card className="p-6 bg-primary text-white border-none mt-6 flex-1 flex flex-col justify-center">
-                <h3 className="font-bold text-xl mb-3">Free Trial Lesson</h3>
-                <p className="mb-2">
+              <Card className="p-8 bg-primary text-white border-none mt-6 flex-1 flex flex-col justify-center">
+                <h3 className="font-bold text-2xl mb-4">Free Trial Lesson</h3>
+                <p className="mb-3 text-lg">
                   Experience our ACER-based Selective School preparation firsthand! Your child will join a real class session to see our teaching style in action.
                 </p>
-                <p className="mb-4 text-white/90">
-                  Mention "free trial" in your message and we'll set one up for you.
+                <p className="mb-3 text-white/90">
+                  Simply fill in the contact form with your child's year level and any specific areas you'd like us to focus on. Let us know your preferred days and times, and we'll find a session that works for your family.
                 </p>
-                <p className="font-semibold text-white/95">Available spots are limited — book yours today!</p>
+                <p className="mb-4 text-white/90">
+                  <span className="font-semibold">Mention "free trial"</span> in your message and we'll set one up for you—no obligations, no pressure.
+                </p>
+                <p className="font-semibold text-lg text-white/95">Available spots are limited — book yours today!</p>
               </Card>
             </div>
           </div>
