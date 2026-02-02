@@ -50,7 +50,19 @@ const About = () => {
               </p>
               
               <p className="text-lg leading-relaxed">
-                Every ACER exam has a logic. Once you see it, everything clicks.
+                Every ACER exam has a logic. A rhythm. A structure that repeats.
+              </p>
+              
+              <p className="text-lg leading-relaxed">
+                Most students study harder. Our students study smarter.
+              </p>
+              
+              <p className="text-lg leading-relaxed">
+                We break down question types. We expose the tricks. We show students exactly what examiners are looking for.
+              </p>
+              
+              <p className="text-lg leading-relaxed">
+                Once you see the patterns, everything clicks.
               </p>
               
               <p className="text-lg leading-relaxed">
@@ -58,10 +70,14 @@ const About = () => {
               </p>
               
               <p className="text-lg leading-relaxed">
-                Our students have gone on to Melbourne High, Mac.Robertson Girls' High School, Nossal High School, and Suzanne Cory High School.
+                It's not about memorising. It's about understanding.
               </p>
               
               <p className="text-lg leading-relaxed">
+                Our students have gone on to Melbourne High, Mac.Robertson Girls' High School, Nossal High School, and Suzanne Cory High School.
+              </p>
+              
+              <p className="text-lg leading-relaxed font-semibold text-foreground">
                 Your child could be next.
               </p>
             </div>
@@ -135,22 +151,22 @@ const About = () => {
               <h2 className="text-3xl md:text-5xl font-bold">Meet Your Tutor</h2>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-stretch max-w-5xl mx-auto">
               {/* Image Side */}
-              <div className="flex justify-center">
+              <div className="flex justify-center items-center">
                 <div className="text-center">
                   <img 
                     src={tutorPhoto} 
                     alt="Vishesh Manik - Selective School Tutor"
-                    className="w-80 h-80 object-cover object-top rounded-2xl shadow-2xl"
+                    className="w-96 h-96 object-cover object-top rounded-2xl shadow-2xl"
                   />
                   <p className="mt-4 text-2xl font-bold text-primary-foreground">Vishesh Manik</p>
                 </div>
               </div>
 
               {/* Description Side */}
-              <div className="flex justify-center">
-                <Card className="p-8 shadow-xl bg-background/95 backdrop-blur max-w-md">
+              <div className="flex items-center">
+                <Card className="p-8 shadow-xl bg-background/95 backdrop-blur h-full flex items-center">
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     <span className="font-semibold text-foreground">Vishesh Manik</span> brings over three years of dedicated experience in Selective School preparation, having helped hundreds of students through his online community achieve their academic dreams. His teaching approach combines proven ACER exam strategies with personalised attention, ensuring each student reaches their full potential. Through his YouTube channel with 2,000+ subscribers, he shares free resources and tips to support students on their Selective School journey.
                   </p>
