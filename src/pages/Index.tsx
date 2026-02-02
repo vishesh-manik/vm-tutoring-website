@@ -166,7 +166,7 @@ const Index = () => {
                   <div className="absolute -left-20 bottom-16 animate-fade-in hidden lg:block" style={{ animationDelay: "300ms" }}>
                     <div className="bg-background rounded-full p-4 shadow-lg border border-primary/20 hover:shadow-xl transition-shadow">
                       <div className="text-center">
-                        <p className="text-lg font-bold text-primary">2K+</p>
+                        <p className="text-lg font-bold text-primary">2k+</p>
                         <p className="text-xs text-muted-foreground whitespace-nowrap">YouTube Subs</p>
                       </div>
                     </div>
@@ -178,7 +178,7 @@ const Index = () => {
               <div className="flex items-center">
                 <Card className="p-8 shadow-xl bg-background/95 backdrop-blur h-full flex items-center">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    <span className="font-semibold text-foreground">Vishesh Manik</span> brings over three years of dedicated experience in Selective School preparation, having helped hundreds of students through his online community achieve their academic dreams. His teaching approach combines proven exam strategies with personalised attention, ensuring each student reaches their full potential. Through his YouTube channel with 2,000+ subscribers, he shares free resources and tips to support students on their Selective School journey.
+                    <span className="font-semibold text-foreground">Vishesh Manik</span> brings over three years of dedicated experience in Selective School preparation, having helped hundreds of students through his online community achieve their academic dreams. His teaching approach combines proven exam strategies with personalised attention, ensuring each student reaches their full potential. Through his YouTube channel with 2,000+ subscribers, he shares free resources and tips to support students on their Selective School journey. Vishesh is passionate about making high-quality ACER preparation accessible to every student, no matter their starting point.
                   </p>
                 </Card>
                 

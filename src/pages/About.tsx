@@ -46,11 +46,7 @@ const About = () => {
             
             <div className="prose prose-lg max-w-none space-y-4 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                We don't just teach content. We teach the patterns behind the questions.
-              </p>
-              
-              <p className="text-lg leading-relaxed">
-                Every ACER exam has a logic. A rhythm. A structure that repeats.
+                VM Tutoring was founded on a simple observation: the students who succeed in Selective School exams aren't always the ones who study the hardest—they're the ones who understand how the exam works. We don't just teach content. We teach the patterns behind the questions. Every ACER exam has a logic, a rhythm, and a structure that repeats year after year. Our mission is to help students see these patterns clearly.
               </p>
               
               <p className="text-lg leading-relaxed">
@@ -58,27 +54,11 @@ const About = () => {
               </p>
               
               <p className="text-lg leading-relaxed">
-                We break down question types. We expose the tricks. We show students exactly what examiners are looking for.
+                We break down question types, expose the tricks, and show students exactly what examiners are looking for. Once you see the patterns, everything clicks. That's what VM Tutoring is all about—helping students crack the code. It's not about memorising. It's about understanding.
               </p>
               
               <p className="text-lg leading-relaxed">
-                Once you see the patterns, everything clicks.
-              </p>
-              
-              <p className="text-lg leading-relaxed">
-                That's what VM Tutoring is all about—helping students crack the code.
-              </p>
-              
-              <p className="text-lg leading-relaxed">
-                It's not about memorising. It's about understanding.
-              </p>
-              
-              <p className="text-lg leading-relaxed">
-                Our students have gone on to Melbourne High, Mac.Robertson Girls' High School, Nossal High School, and Suzanne Cory High School.
-              </p>
-              
-              <p className="text-lg leading-relaxed font-semibold text-foreground">
-                Your child could be next.
+                Our students have gone on to Melbourne High, Mac.Robertson Girls' High School, Nossal High School, and Suzanne Cory High School. <span className="font-semibold text-foreground">Your child could be next.</span>
               </p>
             </div>
           </div>
@@ -107,11 +87,11 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg leading-relaxed">
-                  <strong className="text-foreground">Regular Feedback:</strong> Parents can schedule feedback discussions anytime throughout the programs to be informed about their child's development, strengths and areas requiring focus.
+                  <strong className="text-foreground">Exam Strategy:</strong> Beyond content knowledge, we teach proven strategies for time management, question analysis, and stress reduction. Students learn how to approach different ACER question types efficiently and confidently.
                 </p>
                 
                 <p className="text-lg leading-relaxed">
-                  <strong className="text-foreground">Exam Strategy:</strong> Beyond content knowledge, we teach proven strategies for time management, question analysis, and stress reduction. Students learn how to approach different ACER question types efficiently and confidently.
+                  <strong className="text-foreground">Regular Feedback:</strong> Parents can schedule feedback discussions anytime throughout the programs to be informed about their child's development, strengths and areas requiring focus.
                 </p>
               </div>
             </Card>
