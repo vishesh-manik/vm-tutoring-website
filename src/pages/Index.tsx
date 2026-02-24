@@ -166,8 +166,8 @@ const Index = () => {
                   <div className="absolute -left-20 bottom-16 animate-fade-in hidden lg:block" style={{ animationDelay: "300ms" }}>
                     <div className="bg-background rounded-full p-4 shadow-lg border border-primary/20 hover:shadow-xl transition-shadow">
                       <div className="text-center">
-                        <p className="text-lg font-bold text-primary">2k+</p>
-                        <p className="text-xs text-muted-foreground whitespace-nowrap">YouTube Subs</p>
+                        <p className="text-lg font-bold text-primary">97.75</p>
+                        <p className="text-xs text-muted-foreground whitespace-nowrap">ATAR</p>
                       </div>
                     </div>
                   </div>
@@ -193,8 +193,8 @@ const Index = () => {
                     <p className="text-xs text-muted-foreground">Students Reached</p>
                   </div>
                   <div className="bg-background rounded-2xl p-4 shadow-md border border-primary/20 text-center">
-                    <p className="text-xl font-bold text-primary">2K+</p>
-                    <p className="text-xs text-muted-foreground">YouTube Subscribers</p>
+                    <p className="text-xl font-bold text-primary">97.75</p>
+                    <p className="text-xs text-muted-foreground">ATAR</p>
                   </div>
                 </div>
               </div>
